@@ -1,0 +1,186 @@
+/* ChatGPT was used to figure any errors during the process and to generate comments */
+body {
+  font-family: Arial, sans-serif; /* Set a readable font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  text-align: center;
+  background-color: #f0f4f8; /* Set a light background color */
+  color: #333; /* Set a default text color */
+}
+
+/* Header section styling */
+header {
+  background-color: #ffdac1; 
+  color: #333; 
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center-align the text */
+}
+
+/* Navigation bar styling */
+.navigation {
+  margin-top: 30px; /* Add spacing above the navigation */
+  display: flex; /* Use flexbox for layout */
+  gap: 20px; /* Spacing between items */
+  justify-content: center; /* Center-align the navigation items */
+}
+
+/* Navigation links and dropdown button styling */
+.navigation a,
+.dropbtn {
+  text-decoration: none; /* Remove underline from links */
+  font-size: 18px; /* Set font size */
+  color: white; /* White text color */
+  background-color: #333; /* Dark background color */
+  padding: 10px 20px; /* Add padding for better usability */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for navigation links */
+.navigation a:hover {
+  background-color: #cfe8fc; 
+}
+
+/* Dropdown button hover and focus effect */
+.dropbtn:hover, 
+.dropbtn:focus {
+  background-color: #cfe8fc; 
+}
+
+/* Dropdown container styling */
+/* This code was taken from w3Schools */
+.dropdown {
+  margin-top: 30px; /* Add spacing above */
+  display: flex; /* Use flexbox */
+  gap: 20px; 
+  justify-content: right; 
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none; /* Initially hidden */
+  position: absolute; /* Position relative to parent */
+  background-color: #f1f1f1; /* Light gray background */
+  min-width: 160px; /* Minimum width for dropdown */
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+/* Dropdown content links styling */
+.dropdown-content a {
+  color: black; /* Black text color */
+  padding: 12px 16px; /* Add spacing inside */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Block display for full-width clickable area */
+}
+
+/* Hover effect for dropdown content links */
+.dropdown-content a:hover {
+  background-color: #cfe8fc; /* Change background color on hover */
+}
+
+/* Show dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+  display: block; /* Make the dropdown visible */
+}
+
+/* Dropdown button hover effect */
+.dropdown:hover .dropbtn {
+  background-color: #cfe8fc; /* Change button background color on hover */
+}
+
+/* Styling for main headings (h1) */
+h1 {
+  font-size: 4rem; /* Large font size for emphasis */
+  color: #333; /* Dark gray color for better readability */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styling for secondary headings (h2) */
+h2 {
+  color: #000000; /* Black color for emphasis */
+  text-align: center; /* Center-aligned for balance */
+}
+
+/* Styling for the container element */
+.container {
+  max-width: 1200px; /* Limit the container's width for better readability */
+  margin: 20px auto; /* Center the container and add vertical spacing */
+  padding: 20px; /* Add inner spacing */
+  background-color: white; /* White background for contrast */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for a grid wrapper around container elements */
+.container-wrapper {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr 1fr; /* Two equally-sized columns */
+  gap: 20px; /* Space between grid items */
+  width: 100%; /* Full width of the wrapper */
+}
+
+/* Styling for images inside the container */
+.container img {
+  max-width: 100%; /* Ensure the image does not overflow the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove inline spacing below images */
+  margin: 1rem auto; /* Add vertical spacing and center the image */
+}
+
+/* Styling for videos inside the container */
+.container video {
+  max-width: 100%; /* Ensure the video fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  align-items: center; /* Align content within the container */
+  display: block; /* Block layout for consistent spacing */
+  margin: 1rem auto; /* Add vertical spacing and center the video */
+}
+
+/* Styling for a grid layout specifically for videos */
+.video-grid {
+  display: grid; /* Use grid layout for videos */
+  grid-template-columns: 1fr 1fr; /* Two equally-sized columns */
+  gap: 20px; /* Space between grid items */
+  align-items: start; /* Align videos to the top */
+  margin: 0 auto; /* Center the grid */
+  width: 90%; /* Width limited to 90% of parent element */
+  max-width: 1200px; /* Prevent grid from exceeding a maximum width */
+}
+
+/* Styling for individual video elements */
+.video {
+  width: 100%; /* Ensure the video takes up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Block layout for consistency */
+}
+
+/* General styling for sections */
+section {
+  margin-bottom: 40px; /* Add spacing below each section */
+}
+
+/* Styling for ordered lists (ol) */
+ol {
+  margin-left: 20px; /* Add indentation for list items */
+}
+
+/* Styling for audio elements */
+audio {
+  display: block; /* Ensure audio controls are displayed as a block element */
+  margin-bottom: 20px; /* Add spacing below the audio player */
+  width: 100%; /* Audio player spans the full width of its container */
+}
+
+/* Styling for the footer */
+footer {
+  background-color: #333; /* Dark background for contrast */
+  color: white; /* White text for readability */
+  text-align: center; /* Center-aligned text */
+  padding: 10px 0; /* Add vertical padding */
+}
+
+/* Styling for links in the footer */
+footer a {
+  color: #fff; /* White color to match footer theme */
+  text-decoration: none; /* Remove underline for a clean look */
+}

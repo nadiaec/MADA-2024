@@ -1,0 +1,194 @@
+/* ChatGPT was used to figure any errors during the process and to generate comments */
+body {
+  font-family: Arial, sans-serif; /* Set a readable font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f0f4f8; /* Set a light background color */
+  color: #333; /* Set a default text color */
+}
+
+/* Header section styling */
+header {
+  background-color: #f2c6de; 
+  color: #333; 
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center-align the text */
+}
+
+/* Navigation bar styling */
+.navigation {
+  margin-top: 30px; /* Add spacing above the navigation */
+  display: flex; /* Use flexbox for layout */
+  gap: 20px; /* Spacing between items */
+  justify-content: center; /* Center-align the navigation items */
+}
+
+/* Navigation links and dropdown button styling */
+.navigation a,
+.dropbtn {
+  text-decoration: none; /* Remove underline from links */
+  font-size: 18px; /* Set font size */
+  color: white; /* White text color */
+  background-color: #333; /* Dark background color */
+  padding: 10px 20px; /* Add padding for better usability */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for navigation links */
+.navigation a:hover {
+  background-color: #cfe8fc; 
+}
+
+/* Dropdown button hover and focus effect */
+.dropbtn:hover, 
+.dropbtn:focus {
+  background-color: #cfe8fc; 
+}
+
+/* Dropdown container styling */
+/* This code was taken from w3Schools */
+.dropdown {
+  margin-top: 30px; /* Add spacing above */
+  display: flex; /* Use flexbox */
+  gap: 20px; 
+  justify-content: right; 
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none; /* Initially hidden */
+  position: absolute; /* Position relative to parent */
+  background-color: #f1f1f1; /* Light gray background */
+  min-width: 160px; /* Minimum width for dropdown */
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+/* Dropdown content links styling */
+.dropdown-content a {
+  color: black; /* Black text color */
+  padding: 12px 16px; /* Add spacing inside */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Block display for full-width clickable area */
+}
+
+/* Hover effect for dropdown content links */
+.dropdown-content a:hover {
+  background-color: #cfe8fc; /* Change background color on hover */
+}
+
+/* Show dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+  display: block; /* Make the dropdown visible */
+}
+
+/* Dropdown button hover effect */
+.dropdown:hover .dropbtn {
+  background-color: #cfe8fc; /* Change button background color on hover */
+}
+
+/* Heading 1 styling */
+h1 {
+  font-size: 4rem; 
+  color: #333;
+  margin-bottom: 20px; 
+}
+
+/* Heading 2 styling */
+h2 {
+  color: #000000; 
+  text-align: center; 
+}
+
+/* p styling */
+p {
+  color: #000000; 
+  text-align: center; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image grid styling */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .image-item {
+    text-align: center;
+    width: 45%; 
+  }
+
+  .image-item img {
+    width: 100%; 
+    height: auto;
+  }
+
+  .grid-item:hover {
+    transform: scale(4);
+  }
+
+  .hover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-image:hover {
+    transform: scale(1.5);
+  }
+
+section {
+    margin-bottom: 40px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px; /* Space between images */
+    max-width: 800px; /* Optional: sets a max-width */
+    margin: 0 auto; /* Centers the grid on the page */
+}
+
+.title {
+    writing-mode: vertical-rl; /* Rotates text vertically */
+    transform: rotate(180deg); /* Ensures the text is readable from top to bottom */
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+}
+
+/* Style for each image */
+.grid-container img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Styling for the footer */
+footer {
+  background-color: #333; /* Dark background for contrast */
+  color: white; /* White text for readability */
+  text-align: center; /* Center-aligned text */
+  padding: 10px 0; /* Add vertical padding */
+}
+
+/* Styling for links in the footer */
+footer a {
+  color: #fff; /* White color to match footer theme */
+  text-decoration: none; /* Remove underline for a clean look */
+}

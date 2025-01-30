@@ -1,0 +1,172 @@
+/* ChatGPT was used to figure any errors during the process and to generate comments */
+/* General styling for the body */
+body {
+  font-family: Arial, sans-serif; /* Set a readable font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f0f4f8; /* Set a light background color */
+  color: #333; /* Set a default text color */
+}
+
+/* Header section styling */
+header {
+  background-color: #faedcb; /* Light yellow background */
+  color: #333; /* Dark text for contrast */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center-align the text */
+}
+
+/* Navigation bar styling */
+.navigation {
+  margin-top: 30px; /* Add spacing above the navigation */
+  display: flex; /* Use flexbox for layout */
+  gap: 20px; /* Spacing between items */
+  justify-content: center; /* Center-align the navigation items */
+}
+
+/* Navigation links and dropdown button styling */
+.navigation a,
+.dropbtn {
+  text-decoration: none; /* Remove underline from links */
+  font-size: 18px; /* Set font size */
+  color: white; /* White text color */
+  background-color: #333; /* Dark background color */
+  padding: 10px 20px; /* Add padding for better usability */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for navigation links */
+.navigation a:hover {
+  background-color: #cfe8fc; 
+}
+
+/* Dropdown button hover and focus effect */
+.dropbtn:hover, 
+.dropbtn:focus {
+  background-color: #cfe8fc; 
+}
+
+/* Dropdown container styling */
+/* This code was taken from w3Schools */
+.dropdown {
+  margin-top: 30px; /* Add spacing above */
+  display: flex; /* Use flexbox */
+  gap: 20px; 
+  justify-content: right; 
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none; /* Initially hidden */
+  position: absolute; /* Position relative to parent */
+  background-color: #f1f1f1; /* Light gray background */
+  min-width: 160px; /* Minimum width for dropdown */
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+/* Dropdown content links styling */
+.dropdown-content a {
+  color: black; /* Black text color */
+  padding: 12px 16px; /* Add spacing inside */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Block display for full-width clickable area */
+}
+
+/* Hover effect for dropdown content links */
+.dropdown-content a:hover {
+  background-color: #cfe8fc; /* Change background color on hover */
+}
+
+/* Show dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+  display: block; /* Make the dropdown visible */
+}
+
+/* Dropdown button hover effect */
+.dropdown:hover .dropbtn {
+  background-color: #cfe8fc; /* Change button background color on hover */
+}
+
+/* Heading 1 styling */
+h1 {
+  font-size: 4rem; 
+  color: #333;
+  margin-bottom: 20px; 
+}
+
+/* Heading 2 styling */
+h2 {
+  color: #000000; 
+  text-align: center; 
+}
+
+/* Heading 3 styling */
+h3 {
+  color: #000000; 
+  text-align: center; 
+}
+
+/* Paragraph text styling */
+p {
+  color: #000000; 
+  text-align: center; 
+}
+
+/* Button container styling */
+.button {
+  text-align: center; 
+}
+
+/* Content container styling */
+.container {
+  max-width: 1200px; 
+  margin: 20px auto; 
+  padding: 20px; 
+  background-color: white; 
+  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Section styling */
+section {
+  margin-bottom: 40px; 
+}
+
+/* Ordered list styling */
+ol {
+  margin-left: 20px; /* Add left margin */
+}
+
+/* Table styling */
+table {
+  width: 100%; /* Full-width table */
+  border-collapse: collapse; /* Remove gaps between borders */
+  margin-top: 20px; /* Add spacing above */
+}
+
+/* Table border and cell styling */
+table, th, td {
+  border: 1px solid #ddd; 
+  padding: 10px; 
+}
+
+/* Table header styling */
+th {
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Footer styling */
+footer {
+  background-color: #333; 
+  color: white; 
+  text-align: center; 
+  padding: 10px 0; 
+}
+
+/* Footer links styling */
+footer a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
