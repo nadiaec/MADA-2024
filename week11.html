@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>StudySesh - Week 11: Accessibility</title>
+    <link rel="stylesheet" href="master-files/css/week11.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Week 11 Accessibility</h1>
+        <div class="navigation">
+            <a href="week9.html">Previous Page</a>
+            <a href="homepage.html">Homepage</a>
+            <a href="reflection.html">Next Page</a>
+        </div>
+
+		<div class="dropdown" style="float:right;">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="week1.html">Research</a>
+              <a href="week2.html">Audience</a>
+              <a href="week3.html">Narrative</a>
+              <a href="week5.html">Text</a>
+              <a href="week7.html">Image</a>
+              <a href="week8.html">Audio</a>
+              <a href="week9.html">Video</a>
+              <a href="week11.html">Accessibility</a>
+              <a href="reflection.html">Reflection</a>
+              <a href="moodboard.html">Moodboard</a>
+			  <a href="takeabreak.html">Take a Break</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="Evaluate Websites Against Accessibility">
+        <div class="container">
+        <h2>Evaluate Websites Against Accessibility</h2>
+		<p>For this task, I chose to evaluate 'The Study Space' website as it uses a combination of text, video, images and audio to inform their audience of everything they need to succeed as a student.</p>
+		<div class="list">
+			<ul class="no-bullets">
+				<li><a href="https://wave.webaim.org/">Wave Web Accessibility Evaluation Tool</a></li>
+				<li><a href="https://webaim.org/resources/contrastchecker/">WebAim Contrast Checker</a></li>
+				<li><a href="https://webaim.org/resources/linkcontrastchecker/">WebAim Link Contrast Checker</a></li>
+				<li><a href="https://www.webfx.com/tools/read-able/">Readability Tool</a></li>
+			</ul>
+		</div>
+			<div class="image-container">
+			<img src="master-files/images/week11_mindmap.jpg" alt="Image 2">
+			</div>
+
+		<h3>Errors</h3>
+		<ul>
+			<li>WAVE evaluation of the homepage flagged 7 errors.</li>
+				<ol>2x Linked image missing alternative text</ol>
+				<ol>1x Missing form label</ol>
+				<ol>1x Multiple form labels</ol>
+				<ol>2x Empty buttons</ol>
+				<ol>1x Empty link</ol>
+			<li>Wave Web Accessibility Evaluation Tool</li>
+				<ol>1x Missing first level heading</ol>
+				<ol>15x Redundant links</ol>
+				<ol>1x No script element</ol>
+				<ol>1x Tab index</ol>
+				<ol>3x Redundant title text</ol>
+		</ul>
+
+		<p>All these issues can make it challenging for users to navigate the website and get the information they need. It can also cause fatigue and frustration, therefore it is crucial that all these issues are addressed and solved to avoid confusion and ensure high usability and accessibility amongst users.</p>
+
+		<h3>Readability</h3>
+		<p>The Study Space website has a readability score of 54 out of 100, making it easily understood by 14-15 year olds. This level of accessibility ensures that those in their higher education journey are accommodated.</p>
+
+		<h3>Colour Contrast</h3>
+		<p>The main colours used throughout the website have a 3.01:1 contrast ratio. This ratio is quite low which could pose accessibility challenges. The homepage however has a high contrast ratio therefore making it more accessible for its audience. The colours used on the homepage should be consistent throughout the website to ensure high accessibility for its users.</p>
+
+		<h3>Structural Elements</h3>
+		<p>The structural element on The Study Space website are well organized and accessible. The website does not make use of < h1>, instead it uses < h2> for titles followed by < h3> for subheadings.</p>
+
+		<h3>Summary</h3>
+		<p>Overall, the evaluation of The Study Space website has revealed both the strengths and weaknesses in terms of accessibility. The website has a decent readability score and has a very good structure, however it is clear where improvements need to be made. For example, all the errors need to be solved to avoid confusion amongst users, < h1> can be used to create more contrast between headings and improve navigation, and colour contrast should be consistent throughout the website. By resolving these issues, The Study Space website can offer a more inclusive space for all their users.</p>
+    
+		</div>
+
+		<div class="container">
+			<h2>Accessibility Reflection & Action Plan</h2>
+			<p>As I review and evaluate the development of my website, I realize that accessibility is still an area I need to develop more. In the earlier stages of my design process, although elements such as colour contrast and structure were designed through my own research, intuition and experience as a user of study websites, the overall accessibility needs and requirements of my audience still needs to be considered. As my audience is quite diverse, it is important to ensure the design of my content is inclusive to all. Referring back to my design, listed below are the steps I will take to ensure overall inclusivity and accessibility of my website.</p>
+			<ul>
+				<li>Alternative Text for Images: Ensuring that all images on my website provide descriptive alternative text is essential to make the website accessible to users who have visual impairments and rely on screen readers.</li>
+				<li>Clear and Consistent headings: Use of proper and consistent heading levels (e.g < h1>, < h2>, < h3>) which will create a clear structural hierarchy, and will help screen readers and user easily understand the layout of the website.</li>
+				<li>Regularly test with Accessibility tools: Regular use of the Accessibility tools from this task will allow me to evaluate the accessibility levels of my website and areas I need to improve.</li>
+				<li>Provide captions and transcripts: For multimedia content such as videos and audio, it is important to include transcripts and captions for those who may be hard of hearing and rely on visual aid for content.</li>
+				<li>Make sure text to speech is available: For overall text on the website, it is important to ensure text-to-speech is available for those with vision impairment, that way they can still access the information on the website.</li>
+			</ul>
+		</div>
+</div>
+	
+	</section>
+    </body>
+
+	<footer>
+        <div id="menu">
+            <a href="homepage.html">Homepage</a>
+        </div>
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- This Game was created by ChatGPT to be used as an example of the take a break page I will include in my StudySesh Website -->
+  <title>Catch the Box Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* Set a readable font */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      display: flex; /* Enable flexbox layout */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center elements horizontally */
+      justify-content: center; /* Center elements vertically */
+      min-height: 100vh; /* Ensure full-page height */
+      background-color: #f0f4f8; /* Set a light background color */
+      color: #333; /* Set a default text color */
+    }
+
+    /* Header section styling */
+    header {
+      background-color: #b2ead3; 
+      color: #333; /* Dark text for contrast */
+      padding: 20px; /* Add padding for spacing */
+      text-align: center; /* Center-align the text */
+      width: 100%; /* Ensure header spans full width */
+    }
+
+    /* Navigation bar styling */
+    .navigation {
+      margin-top: 30px; /* Add spacing above the navigation */
+      display: flex; /* Use flexbox for layout */
+      gap: 20px; /* Spacing between items */
+      justify-content: center; /* Center-align the navigation items */
+    }
+
+    /* Navigation links styling */
+    .navigation a {
+      text-decoration: none; /* Remove underline from links */
+      font-size: 18px; /* Set font size */
+      color: white; /* White text color */
+      background-color: #333; /* Dark background color */
+      padding: 10px 20px; /* Add padding for better usability */
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+    .navigation a:hover {
+      background-color: #cfe8fc;
+    }
+
+    /* Content container styling */
+    .container {
+      max-width: 800px; 
+      margin: 20px auto; 
+      padding: 20px; 
+      background-color: white; 
+      border-radius: 5px; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    /* Game container styling */
+    .game-container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      border: 2px solid #333;
+      background-color: #fff;
+      display: flex; /* Use flexbox for alignment */
+      justify-content: center; /* Center child elements horizontally */
+      align-items: center; /* Center child elements vertically */
+      margin: 20px auto; /* Center the container horizontally */
+    }
+
+    .box {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      cursor: pointer;
+    }
+
+    .score {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Take A Break</h1>
+  <h2>This game sample was created by ChatGPT</h2>
+  <h3>Prompt: 'Make a very simple game in HTML'</h3>
+  <div class="nav-container">
+    <div class="navigation">
+      <a href="homepage.html">Homepage</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <p>
+    The purpose of this page is to show an example of the page I want to include in my StudySesh Website. 
+    It will include multiple games to suit different user preferences and will incorporate all the multimedia elements discussed throughout this portfolio. 
+    I made this page accessible on every page through the menu; however, for the actual website, I would like to create a specific button for immediate access to the page.
+  </p>
+</div>
+
+<div class="game-container" id="gameContainer">
+  <div class="score" id="score">Score: 0</div>
+  <div class="box" id="box"></div>
+</div>
+
+<script>
+  const box = document.getElementById('box');
+  const scoreDisplay = document.getElementById('score');
+  const gameContainer = document.getElementById('gameContainer');
+
+  let score = 0;
+
+  function moveBox() {
+    const containerWidth = gameContainer.clientWidth;
+    const containerHeight = gameContainer.clientHeight;
+
+    const newX = Math.random() * (containerWidth - 50);
+    const newY = Math.random() * (containerHeight - 50);
+
+    box.style.left = `${newX}px`;
+    box.style.top = `${newY}px`;
+  }
+
+  box.addEventListener('click', () => {
+    score++;
+    scoreDisplay.textContent = `Score: ${score}`;
+    moveBox();
+  });
+
+  // Initialize box position
+  moveBox();
+</script>
+</body>
+</html>
+
